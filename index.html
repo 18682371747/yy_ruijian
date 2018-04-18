@@ -30,17 +30,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/style.css" rel="stylesheet">
-    <script charset="utf-8" src="./js/v.js"></script>
-    <script src="./js/hm.js"></script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?5b64357c29159cc8a346cfffabe4320b";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
+    
 </head>
 
 <body id="page-top" class="    pace-done">
@@ -368,55 +358,7 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/inspinia.js"></script>
 
-    <script type="text/javascript">
-        if ($(".bs-docs-sidebar").length > 0) {
-            $(document.body).scrollspy({
-                target: ".bs-docs-sidebar",
-                offset: 100
-            });
-
-            $(window).on("load", function () {
-                $(document.body).scrollspy("refresh")
-            });
-
-            $('.bs-docs-sidebar [href="#"]').click(function (ev) {
-                ev.preventDefault()
-            });
-
-            setTimeout(function () {
-                var b = $(".bs-docs-sidebar");
-                b.affix({
-                    offset: {
-                        top: function () {
-                            var c = b.offset().top,
-                                d = parseInt(b.children(0).css("margin-top"), 10),
-                                e = $(".bs-docs-nav").height();
-                            return this.top = c - e - d;
-                        },
-                        bottom: function () {
-                            return this.bottom = $(".bs-docs-footer").outerHeight(true);
-                        }
-                    }
-                })
-            }, 100);
-
-            setTimeout(function () {
-                $(".bs-top").affix()
-            }, 100);
-        }
-
-        if ($(".cards").length > 0) {
-            $(".cards li").click(function () {
-                $(".cards li").removeClass('active');
-                $(this).addClass('active');
-
-                var index = $(".cards li").index(this);
-
-                $(".boxs .box").addClass('hide');
-                $(".boxs .box").eq(index).removeClass('hide');
-            });
-        }
-    </script>
+    
 </body>
 
 </html>
